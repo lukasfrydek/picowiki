@@ -14,7 +14,7 @@
 - **Powerful** You can use PHP code anywhere
 
 
-## Available Plugins
+## Available Plugins :-)
 
 <?php foreach( $this->plugin_list as $plugin ){ ?>
 - <?=pathinfo($plugin)['filename']?>
