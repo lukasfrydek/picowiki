@@ -100,7 +100,7 @@ class PicoWiki
 	}
 
 	protected function get404Path() {
-		return $this->getPath('404', PATH_TEMPLATES);
+		return $this->getTemplatePath('404', MD);
 	}
 
 	/**
@@ -117,8 +117,8 @@ class PicoWiki
 		return $path . $file_name . $ext;
 	}
 	
-	protected function getTemplatePath($template) {
-		return $this->getPath($template, PATH_TEMPLATES, PHP);
+	protected function getTemplatePath($template, $ext = PHP) {
+		return $this->getPath($template, PATH_TEMPLATES, $ext);
 	}
 	/**
 	 * Outputs the templates and files
